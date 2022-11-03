@@ -1,0 +1,7 @@
+image:
+  file: .gitpod/Dockerfile
+
+tasks:
+  - name: webform-next
+    init: bash .gitpod/init.sh
+    command: bash .gitpod/command.sh
