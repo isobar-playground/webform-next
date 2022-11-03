@@ -1,0 +1,10 @@
+{
+    "folders": [
+        {
+            "path": "." // Frontend repository.
+        },
+        {
+            "path": "../webform-api" // API repository.
+        },
+    ],
+}
