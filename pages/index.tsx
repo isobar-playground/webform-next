@@ -1,6 +1,7 @@
 import Head from "next/head"
 
 import { Layout } from "components/layout"
+import SimpleForm from "../components/simple-form";
 
 export default function IndexPage() {
   return (
@@ -13,7 +14,7 @@ export default function IndexPage() {
         />
       </Head>
       <div>
-
+          <SimpleForm />
       </div>
     </Layout>
   )
