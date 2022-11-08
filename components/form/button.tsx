@@ -1,4 +1,7 @@
-export default function Button({name, label}) {
+export default function Button({ name, label }: {
+    name: string,
+    label: string,
+}) {
     return (
         <>
             <div className="md:flex md:items-center">
