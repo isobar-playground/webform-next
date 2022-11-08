@@ -3,5 +3,8 @@
 # Set environment variables.
 envsubst < .env.example > .env.local
 
-# Start dev server.
-yarn dev
+# Build app
+yarn build
+
+# Start server.
+yarn start
