@@ -9,3 +9,5 @@ describe('Form performance', () => {
     cy.get('#toast-container').contains('Success')
   })
 })
+
+export {}
