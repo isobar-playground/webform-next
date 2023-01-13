@@ -3,7 +3,7 @@ import Head from "next/head"
 import { Layout } from "components/layout"
 import SimpleForm from "../components/simple-form";
 
-export default function IndexPage() {
+export default function IndexPage({time}) {
   return (
     <Layout>
       <Head>
@@ -14,8 +14,17 @@ export default function IndexPage() {
         />
       </Head>
       <div>
+          Date {time}
           <SimpleForm />
       </div>
     </Layout>
   )
+}
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      time: new Date().toLocaleString()
+    },
+  }
 }
